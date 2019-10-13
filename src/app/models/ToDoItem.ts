@@ -1,9 +1,11 @@
 export class ToDoItem {
     isChecked: Boolean;
-    label: string;
+    description: string;
+    id: number;
 
-    constructor(label: string = "") {
+    constructor(description: string = "") {
         this.isChecked = false;
-        this.label = label;
+        this.description = description;
+        this.id = -1;
     }
 }
